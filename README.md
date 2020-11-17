@@ -68,3 +68,48 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+<!-- class App extends React.Component {
+  // const [todos, setTodos] = useState([]);
+  constructor(props){
+    super(props);
+
+    this.state = {
+      counter: 2,
+      note:'',
+      todos: []
+    }
+  }
+
+
+  addCounter = (e) => {
+    console.log(e.target.value)
+    this.setState({note: e.target.value})
+  }
+
+  addTodo = (e) =>{
+    this.setState({todos: [...this.state.todos, this.state.note]})
+  }
+
+  render(){
+    return (
+      <div className="App">
+        <h1>Train Names 🚋 </h1>
+        <input onChange={this.addCounter}/>
+        <button onClick={this.addTodo}>Add Todo</button>
+        <ul>
+          {this.state.todos.map(todo => <li key={new Date}>{todo}</li>)}
+          <li>take 1</li>
+          <li>take 2</li>
+        </ul>
+
+      </div>
+    )
+  }
+} -->
